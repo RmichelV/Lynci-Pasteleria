@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Lobster&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Lobster&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("../fonts/Railey-PersonalUse.ttf");
+.nav{
+    background-color: rgb(255, 88, 166);
+}
+
+.alink{
+    color: white;
+}
+
+.nav-logo {
+    width: 10%;
+}
+
+main{
+    display: flex;
+
+}
+.hero-img{
+    width: 50%;
+    height: 80vh;
+}
+
+.carourel{
+    width: 50%;
+    height: 80vh;
+}
+
+.c-img{
+    width: 100%;
+    height: 80vh;
+}
+
+h2, h3{
+    font-family: "Railey";
+    font-size: 50px;
+}
+
+p,li{
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+}
+
+.container-t{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; 
+}
+.img-torta{
+    width: 100%;
+    height: 60vh;
+}
+
+
+
