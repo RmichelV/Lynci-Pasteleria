@@ -17,11 +17,13 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="../Css/index.css">
+
+        <script src="../Js/script.js" defer></script>
     </head>
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg nav">
+            <nav class="navbar navbar-expand-lg nav" id="navbar">
                 <div class="container-fluid">
                     
                     <!-- btn responsive -->
@@ -72,8 +74,12 @@
         </header>
 
         <main>
-            <img src="../Img/WhatsApp Image 2024-12-06 at 14.06.57.jpeg" alt="Lynci" class="hero-img">
-            <div id="carouselExampleAutoplaying carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="titulos">
+                <h1 class="Lynci">Lynci</h1>
+                <p class="pasteleria">PASTELERÍA</p>
+            </div>
+            <!--Carrouel-->
+            <div id="carouselExampleAutoplaying" class="carousel slide car" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../Img/pasteles/p1.jpeg" class="d-block c-img" alt="...">
@@ -94,17 +100,23 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
         </main>
-        <div class="container">
+        <div class="container-m">
             <div id="mision">
-                <h2>Mision</h2>
+            </div>
+            <div id="mis">
+                <h2>Misión</h2>
                 <p>Brindar a nuestros clientes momentos únicos de felicidad a través de productos de pastelería artesanal de alta calidad, elaborados con ingredientes frescos y recetas innovadoras. En Lynci, nos enfocamos en ofrecer experiencias dulces que conecten con las emociones de nuestros consumidores en cada bocado.</p>
             </div>
             <div id="vision">
-                <h2>Vision</h2>
+            </div>
+            <div class="vis">
+                <h2>Visión</h2>
                 <p>Convertirnos en la pastelería más reconocida en La Paz, destacándonos por nuestra creatividad, calidad excepcional y compromiso con la satisfacción de nuestros clientes, llegando a ser un referente en el arte de la pastelería en Bolivia.</p>
             </div>
-            <div id="objetivos">
+            <div id="objetivos"></div>
+            <div id="obj">
                 <h2>Objetivos</h2>
                 <h3>Objetivo General</h3>
                 <p>Ofrecer productos de pastelería que deleiten el paladar de nuestros clientes, garantizando calidad, frescura e innovación en cada creación, y posicionarnos como la pastelería preferida en La Paz.</p>
@@ -121,7 +133,54 @@
             </div>
         </div>
         <footer>
-            <!-- place footer here -->
+            <div class="f1">
+                <h3> Visitanos </h3>
+
+                <div class="direccion">
+                    <a href="https://maps.app.goo.gl/LmEvJZYNDh3VUAUG7">
+                        <img src="../Img/iconos/maps.png" alt="maps" class="f1-img">
+                    </a>
+                    <div class="dir">
+                        <p> Pasaje X #xxx a unos pasos de la Plaza del Minero</p>
+                    </div>
+                </div>
+                <h3>
+                    Pedidos y Reservas
+                </h3>
+                <div class="telefonos">
+                    <img src="../Img/iconos/phone.png" alt="phone" class="f1-img">
+                    <p>2-2XXXXXX</p>
+                </div>
+                <div class="whatsapp">
+                    <a href="">
+                        <img src="../Img/iconos/WhatsApp.svg.png" alt="whats" class="f1-img">
+                        <h3>
+                            +591XXXXXXXX
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="f2">
+                <div class="f21">
+                    <h3>Horarios de atención: <br>
+                    De XX:XX a XX:XX </h3>
+                </div>
+                <div class="f22">
+                    <h3>Siguenos en nuestras RedesSociales</h3>
+                    <div class="redes">
+                        <a href="">
+                            <img src="../Img/iconos/fb.png" alt="facebook" class="rs-img">
+                        </a>
+                        <a href="">
+                            <img src="../Img/iconos/insta.png" alt="instagram" class="rs-img">
+                        </a>
+                        <a href="">
+                            <img src="../Img/iconos/tiktok.webp" alt="tiktok" class="rs-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

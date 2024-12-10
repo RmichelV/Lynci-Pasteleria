@@ -4,8 +4,15 @@
     font-family: 'Railey';
     src: url('../fonts/Railey-PersonalUse.ttf') format('truetype');
 }
+
+body{
+    background-color: rgb(255, 255, 255);
+}
 .nav{
-    background-color: rgba(255, 61, 152, 0.498);
+    background-color: rgba(200, 32, 110, 0.423);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
 .alink{
@@ -16,33 +23,160 @@
     width: 10%;
 }
 
+
+.scrolled1{
+    transition:calc(2s);
+    background-color: rgba(200, 32, 110, 0.541);
+}
+
+.scrolled1{
+    transition:calc(2s);
+    background-color: rgb(200, 32, 110);
+}
+
 main{
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
 }
-.hero-img{
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
-    height: 80vh;
+    /* border: 3px solid red; */
+    height: 100vh;
+    justify-content: center;
 }
 
-.carourel{
-    width: 50%;
-    height: 80vh;
+.Lynci{
+    font-family: 'Railey', sans-serif;
+    font-size: 20vh;
+    color: #AF5C78;
+    margin-bottom: 50px;
+}
+.pasteleria{
+    font-family: sans-serif;
 }
 
-.c-img{
+/* .car{
     width: 100%;
-    height: 80vh;
+    border: 3px solid red;
+    height: 100vh;
+    
 }
+
+.car img{
+    width: 100%;
+    height: 100vh;
+} */
+
+.car {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden; /* Asegura que el contenido no sobresalga */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Hace que la imagen cubra todo el área */
+}
+
+/* Aplicar el degradado a la imagen */
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255), transparent); /* Degradado de negro a transparente */
+    pointer-events: none; /* Evita que interfiera con la interacción */
+    z-index: 1; /* Asegura que el degradado esté por encima de la imagen */
+}
+
+.container-m{
+    text-align: center;
+    margin: 0 50px;
+}
+
+#mision, #vision, #objetivos{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+
 
 h2, h3{
     font-family: "Railey";
     font-size: 50px;
 }
 
+
+
+
 p,li{
     font-family: "Caveat", cursive;
     font-size: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/pasteles/p5f.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Cambia el color del texto para mayor legibilidad */
+    object-fit:contain
+}
+footer h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.f1, .f2{
+    width: 100%;
+    padding: 50px;
+}
+.direccion, .telefonos, .whatsapp a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f1-img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+footer  h3{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+}
+.dir p, .telefonos p{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.f1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.f2{
+    text-align: center;
+}
+.rs-img{
+    width: 100px;
+    margin: 20px;
 }
 
 .container-t{
@@ -55,5 +189,18 @@ p,li{
     height: 60vh;
 }
 
+@media (max-width:1430px) {
+    main{
+        display: block;
+    }
+    .titulos{
+        width: 100%;
+    }
 
-
+    .carousel-item::before {
+        background: linear-gradient(to bottom, rgb(255, 255, 255), transparent); /* Degradado de negro a transparente */
+    }
+    footer{
+        display: block;
+    }
+}
