@@ -3,7 +3,7 @@ const navbar = document.getElementById('navbar');
 // Función que se ejecuta cuando se hace scroll
 window.addEventListener('scroll', function() {
     // Verificamos la posición del scroll
-    if (window.scrollY > 20) {
+    if (window.scrollY > 100) {
         // Cambiar el estilo del navbar cuando el scroll es mayor a 50px
         navbar.classList.add('scrolled1');
     } else if(window.scrollY > 80){
