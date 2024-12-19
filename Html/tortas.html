@@ -18,7 +18,39 @@
         />
         <link rel="stylesheet" href="../Css/index.css">
     </head>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            cursor: pointer;
+        }
 
+        .image-container img {
+            display: block;
+            transition: 0.3s ease-in-out;
+        }
+
+        .image-container:hover img {
+            filter: brightness(50%);
+        }
+
+        .hover-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+    </style>
     <body>
         <header>
             <nav class="navbar navbar-expand-lg nav">
@@ -70,79 +102,37 @@
                 </div>
             </nav>
         </header>
+        <div class="container">
+            <!-- Imagen con hover -->
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal">
+                <img src="https://via.placeholder.com/300x200" alt="Product Image" class="img-fluid">
+                <h3>Titulo de la torta</h3>
+                <div class="hover-text">Haga clic para más información</div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex align-items-start">
+                            <img src="https://via.placeholder.com/300x200" alt="Product Image" class="img-fluid me-3">
+                            <div>
+                                <h5>Nombre del Producto</h5>
+                                <p>Descripción: Este es un producto increíble que ofrece características únicas y un diseño elegante.</p>
+                                <p>Precio: $99.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
 
-        <main>
-            <img src="../Img/WhatsApp Image 2024-12-06 at 14.06.57.jpeg" alt="Lynci" class="hero-img">
-            <div id="carouselExampleAutoplaying carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../Img/pasteles/p1.jpeg" class="d-block c-img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../Img/pasteles/p2.jpeg" class="d-block c-img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../Img/pasteles/p3.jpeg" class="d-block c-img" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </main>
-        <h2>Menu de Tortas</h2>
-        <div class="container-t">
-            <div class="torta">
-                <img src="../Img/tortas/tc.jpeg" alt="torta" class="img-torta">
-                <div class="descripcion">
-                    <h3 class="title-torta">Torta de chocolate</h3>
-                    <p class="descripcion">Un clásico rico y esponjoso, hecho con cacao intenso y capas de chocolate que pueden estar acompañadas de ganache o frosting, ideal para los amantes del dulce.
-                    </p>
-                    <p class="precio">Bs. xxx </p>
-                </div>
-            </div>
-            <div class="torta">
-                <img src="../Img/tortas/t1.jpeg" alt="torta" class="img-torta">
-                <div class="descripcion">
-                    <h3 class="title-torta">Torta de Tres Leches</h3>
-                    <p class="descripcion">Esponjosa y jugosa, esta torta está bañada con una mezcla de tres tipos de leche: evaporada, condensada y crema, coronada con merengue o crema chantilly.
-                    </p>
-                    <p class="precio">Bs.xxx </p>
-                </div>
-            </div>
-            <div class="torta">
-                <img src="../Img/tortas/tz.jpeg" alt="torta" class="img-torta">
-                <div class="descripcion">
-                    <h3 class="title-torta">Torta de Zanahoria</h3>
-                    <p class="descripcion">Dulce y húmeda, elaborada con zanahorias ralladas, especias como canela y nuez moscada, y a menudo cubierta con glaseado de queso crema.
-                    </p>
-                    <p class="precio">Bs.xxx </p>
-                </div>
-            </div>
-            <div class="torta">
-                <img src="../Img/tortas/tv.webp" alt="torta" class="img-torta">
-                <div class="descripcion">
-                    <h3 class="title-torta">Torta de Vainilla</h3>
-                    <p class="descripcion">Ligera y suave, con un delicado sabor a vainilla, perfecta como base para diferentes tipos de rellenos o simplemente con un glaseado.
-                    </p>
-                    <p class="precio">Bs.xxx </p>
-                </div>
-            </div>
-            <div class="torta">
-                <img src="../Img/tortas/tsn.jpeg" alt="torta" class="img-torta">
-                <div class="descripcion">
-                    <h3 class="title-torta">Torta Selva Negra</h3>
-                    <p class="descripcion">De origen alemán, esta torta combina capas de bizcocho de chocolate, crema batida y cerezas maceradas, decorada con virutas de chocolate y más cerezas.
-                    </p>
-                    <p class="precio">Bs. xxx</p>
-                </div>
-            </div>
-        </div>  
+        
         <footer>
             <!-- place footer here -->
         </footer>

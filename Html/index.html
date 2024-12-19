@@ -45,10 +45,8 @@
                                 Conocenos
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#mision">Misión</a></li>
-                                    <li><a class="dropdown-item" href="#vision">Visión</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#objetivos">Objetivos</a></li>
+                                    <li><a class="dropdown-item" href="#nosotros">Quiénes somos?</a></li>
+                                    <li><a class="dropdown-item" href="#nos">Misión y Visión</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -56,12 +54,12 @@
                                 Menú
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./tortas.html">Tortas</a></li>
-                                    <li><a class="dropdown-item" href="#">Masitas</a></li>
+                                    <li><a class="dropdown-item" href="#tortas">Tortas</a></li>
+                                    <li><a class="dropdown-item" href="#masas">Masitas</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-disabled="true">Contactos</a>
+                                <a class="nav-link" aria-disabled="true" href="#contacto">Contactos</a>
                             </li>
                         </ul>
                         <!-- <form class="d-flex" role="search">
@@ -102,8 +100,523 @@
             </div> -->
             <img src="../Img/ros.jpeg" alt="rocito" width="100%">
         </main>
-        <div class="container-m">
-            <div id="mision">
+
+        <div class="tortas" id='tortas'>
+            <div class="tortitas">
+                <h3>Tortas</h3>
+                <img src="https://images.emojiterra.com/twitter/v14.0/512px/1f382.png" alt="">
+            </div>
+            
+            <div class="container grid">
+                <div class="torta">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        <img src="../Img/tortas/ts2.png" alt="Product Image" class="img-fluid">
+                        <h4>Torta de Frutos Rojos y Chocolate 
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/tortas/ts2.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Torta de Frutos Rojos y Chocolate </h5>
+                                        <p>Una exquisita torta con base esponjosa, decorada con crema suave y detalles de chocolate artesanal. Su vibrante color rojo y delicados toques de crema la convierten en el postre perfecto para celebrar momentos especiales. 
+                                        </p>
+                                        <p>Precio: Bs. 60</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="torta">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal2">
+                        <img src="../Img/tortas/ts3.png" alt="Product Image" class="img-fluid">
+                        <h4>Pastel de Frutas Tropicales 
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal2" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/tortas/ts3.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Pastel de Frutas Tropicales 
+                                        </h5>
+                                        <p>Una deliciosa opción cubierta de crema azul y decorada con rodajas frescas de naranja y toques de crema. ¡Fresco y vibrante! 
+                                        </p>
+                                        <p>Precio: Bs. 60</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp rp2"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido pedido2">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="torta">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal3">
+                        <img src="../Img/tortas/ts4.png" alt="Product Image" class="img-fluid">
+                        <h4>Pastel de Rosas y Chocolate
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal3" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/tortas/ts4.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Pastel de Rosas y Chocolate </h5>
+                                        <p>Bizcocho cubierto con crema rosada, decorado con elegantes rosas de crema y un toque irresistible de chocolate en caída. Perfecto para celebraciones románticas. 
+
+                                        </p>
+                                        <p>Precio: Bs. 60</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="torta">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal4">
+                        <img src="../Img/tortas/ts5.png" alt="Product Image" class="img-fluid">
+                        <h4>Pastel de Chocolate Blanco y Peras 
+
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal4" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/tortas/ts5.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Pastel de Chocolate Blanco y Peras 
+                                        </h5>
+                                        <p>Un pastel sofisticado, cubierto de crema blanca y decorado con peras bañadas en chocolate. Una experiencia dulce y delicada. 
+ 
+                                        </p>
+                                        <p>Precio: Bs. 60</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="masas" id='masas'>
+            <div class="masitas">
+                <h3>Masitas</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/1784/1784096.png" alt="">
+            </div>
+            
+            <div class="container grid">
+                <div class="masa">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal5">
+                        <img src="../Img/masitas/m2.png" alt="Product Image" class="img-fluid">
+                        <h4>Brownie 
+
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal5" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/masitas/m2.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Brownie 
+                                        </h5>
+                                        <p>Chocolate de alta calidad, mantequilla y nueces, servido caliente y acompañado de una bola de helado de vainilla o crema batida. El postre perfecto para los amantes del chocolate. 
+ 
+                                        </p>
+                                        <p>Precio: Bs. 8</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masa">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal6">
+                        <img src="../Img/masitas/m3.png" alt="Product Image" class="img-fluid">
+                        <h4>Croissant 
+
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal6" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/masitas/m3.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Croissant 
+
+                                        </h5>
+                                        <p>Delicioso y ligero, con una textura hojaldrada y crujiente por fuera, y suave por dentro. Perfecto para disfrutar en cualquier momento del día. 
+
+                                        </p>
+                                        <p>Precio: Bs. 7</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp rp2"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido pedido2">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masa">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal7">
+                        <img src="../Img/masitas/m4.png" alt="Product Image" class="img-fluid">
+                        <h4>Alfajores 
+
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal7" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/masitas/m4.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Alfajores</h5>
+                                        <p>Deliciosos alfajores rellenos con dulce de leche, elaborados con suaves tapas de maicena y espolvoreados con coco rallado en los bordes. 
+
+
+                                        </p>
+                                        <p>Precio: Bs. 60</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masa">
+                    <!-- Imagen con hover -->
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#infoModal8">
+                        <img src="../Img/masitas/m1.png" alt="Product Image" class="img-fluid">
+                        <h4>Cookie
+
+                        </h4>
+                        <div class="hover-text">Haga clic para más información</div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="infoModal8" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Detalles del Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body align-items-start">
+                                    <img src="../Img/masitas/m1.png" alt="Product Image" class="img-fluid me-3">
+                                    <div class="modal-container">
+                                        <h5>Cookie
+                                        </h5>
+                                        <p>Una galleta recién horneada, crujiente por fuera y suave por dentro, con el irresistible toque de chispas de chocolate y otros sabores fundidas. 
+
+ 
+                                        </p>
+                                        <p>Precio: Bs. 60</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary rp"
+                                    >
+                                        Realizar Pedido
+                                    </button>
+                                    
+                                    <div class="pedido">
+                                        <form action="" method="post" class="">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Cantidad</label>
+                                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Cantidad de tortas que desea ordenar">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="opcional">
+                                              </div>
+                                              <small>Mensaje que va en la torta</small><br>
+                                              <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                            Continuar con el pedido
+                                    </button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="container mt-5">
+            <div id="nosotros">
+                <img src="../Img/nosotros.png" alt="">
+                <div>
+                    <h3>Quienes somos?</h3>
+                    <p>Lynci es una pastelería innovadora que combina la repostería tradicional con técnicas avanzadas de personalización y opciones saludables, como productos sin gluten, bajos en azúcar y veganos. La oportunidad de mercado radica en el creciente interés por opciones más saludables y personalizadas en La Paz, Bolivia. El valor único de Pastelería Lynci es su enfoque en la personalización a través de diseños únicos y la atención a las necesidades dietéticas especiales.
+                    </p>
+                </div>
+
+            </div>
+               <div class="vid" id="nos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jQYjjmrnbMw?si=ImwMLSKW4BZnmZ2L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- <div id="mision">
             </div>
             <div id="mis">
                 <h2>Misión</h2>
@@ -130,9 +643,14 @@
                     <li>Sostenibilidad: Adoptar prácticas responsables y sostenibles en el proceso de producción y empaque.</li>
                     <li>Expansión del mercado: Incrementar nuestra presencia a través de puntos de venta estratégicos y plataformas digitales para llegar a más clientes en La Paz.</li>
                 </ol>
-            </div>
+            </div> -->
+
+         
         </div>
-        <footer>
+
+        
+
+        <footer id="contacto">
             <div class="f1">
                 <h3> Visitanos </h3>
 
