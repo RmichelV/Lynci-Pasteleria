@@ -367,4 +367,12 @@ footer  h3{
     footer{
         display: block;
     }
+
+    #nosotros{
+        display: block;
+    }
+
+    #nosotros div{
+        margin: 0;
+    }
 }
